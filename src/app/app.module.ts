@@ -9,14 +9,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { environment } from './../environments/environment';
 import { NavbarComponent } from './navbar/navbar.component';
-import { FirebaseComponent } from './firebase/firebase.component';
+import { FireTeamsComponent } from './fire-teams/fire-teams.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FirebaseComponent
+    FireTeamsComponent
   ],
   imports: [
     BrowserModule,
