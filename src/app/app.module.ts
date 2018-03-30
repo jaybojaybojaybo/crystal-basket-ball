@@ -10,13 +10,21 @@ import { AppComponent } from './app.component';
 import { environment } from './../environments/environment';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FireTeamsComponent } from './fire-teams/fire-teams.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { BoardsComponent } from './boards/boards.component';
+import { ListsComponent } from './lists/lists.component';
+import { CardsComponent } from './cards/cards.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FireTeamsComponent
+    FireTeamsComponent,
+    DashboardComponent,
+    BoardsComponent,
+    ListsComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
