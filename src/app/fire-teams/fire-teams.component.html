@@ -1,0 +1,11 @@
+<ul>
+    <div *ngFor="let fireTeam of fireTeamsObservable | async">
+      <li>
+            <h3><a href="#">{{(fireTeam | async).city}}{{(fireTeam | async).name}}</a> </h3>
+            <p>Coach: {{(fireTeam | async).coach}}</p>
+            <div>
+                <a href="{{(fireTeam | async).url}}" target="_blank" class="btn btn-danger">Official {{(fireTeam | async).city}}{{(fireTeam | async).name}} Website</a>
+            </div>
+      </li>
+    </div>
+</ul>
