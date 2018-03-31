@@ -3,7 +3,7 @@
 
 ## Description
 Crystal Basket Ball: Like a traditional NBA center in the low post, this app makes a huuuuuge pivot.
-What started out as a basketball stats application, is now recreating the Trello app to help the app creator finish the app they are attempting to make.
+What started out as a statistics drive basketball performance prediction app, is now recreating the Trello app to help the app creator finish the app they are attempting to make.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 

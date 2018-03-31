@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Board } from '../board';
-import { BoardsComponent } from '../boards/boards.component';
+import { BoardService } from '../board.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,15 +9,17 @@ import { BoardsComponent } from '../boards/boards.component';
 })
 export class DashboardComponent implements OnInit {
 
-  boards: Board[] = [
-    {id: 1, name: "Work"},
-    {id: 2, name: "Family"},
-    {id: 3, name: "Chores"}
-  ]
+  boards: Board[] = [];
 
-  constructor() { }
+  constructor(private boardService: BoardService) { }
 
   ngOnInit() {
+    this.getBoards();
+  }
+
+  getBoards(): void {
+    this.boardService.getBoards()
+      .subscribe(boards => this.boards = boards.slice(0,100));
   }
 
 }
