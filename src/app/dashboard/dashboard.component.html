@@ -9,13 +9,14 @@
         <li class="btn btn-secondary my-2 dropdown" ngbDropdown>
           <a class="dropdown-toggle" id="dashDrop01" ngbDropdownToggle>Boards</a>
           <div class="dropdown-menu" aria-labelledby="dashDrop01" ngbDropdownMenu>
-            <a class="dropdown-item" href="#">Board1</a>
-            <a class="dropdown-item" href="#">Board2</a>
-            <a class="dropdown-item" href="#">Board3</a>
+            <a *ngFor="let board of boards" class="dropdown-item" href="#">{{board.name}}</a>
           </div>
         </li>
 
       </p>
+    </div>
+    <div class="container">
+      <app-boards></app-boards>
     </div>
   </section>
 </main>

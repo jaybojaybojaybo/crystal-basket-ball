@@ -1,1 +1,22 @@
-<app-lists></app-lists>
+<div class="album py-5 bg-light">
+    <div class="row">
+
+
+    <div class="col-md-4" *ngFor="let board of boards">
+      <div class="card mb-4 box-shadow">
+        <img class="card-img-top" src="http://media.tiffany.com/is/image/Tiffany/12578539_16342_ED_M?$EcomItemL2$&id=OiQqf3&fmt=jpg&fit=constrain,1&wid=1308&hei=1308" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">{{board.name}}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Details</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
