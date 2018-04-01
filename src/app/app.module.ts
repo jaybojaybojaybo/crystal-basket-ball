@@ -25,6 +25,8 @@ import { CardService } from './card.service';
 import { MessageService } from './message.service';
 
 import { AppRoutingModule } from './/app-routing.module';
+import { BoardViewComponent } from './board-view/board-view.component';
+import { BoardSearchComponent } from './board-search/board-search.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { AppRoutingModule } from './/app-routing.module';
     BoardsComponent,
     ListsComponent,
     CardsComponent,
-    MessagesComponent
+    MessagesComponent,
+    BoardViewComponent,
+    BoardSearchComponent
   ],
   imports: [
     BrowserModule,
