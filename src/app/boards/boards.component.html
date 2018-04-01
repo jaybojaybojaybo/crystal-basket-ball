@@ -19,6 +19,7 @@
             <div class="btn-group">
               <button type="button" class="btn btn-sm btn-outline-secondary" routerLink="/board-view/{{board.id}}">Details</button>
               <button type="button" class="btn btn-sm btn-outline-secondary" routerLink="/boards">Edit</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary delete" title="delete board" (click)="delete(board)">x</button>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { List } from '../list';
 import { ListService } from "../list.service";
 import { Card } from '../card';
+import { CardService } from '../card.service';
 
 @Component({
   selector: 'app-lists',

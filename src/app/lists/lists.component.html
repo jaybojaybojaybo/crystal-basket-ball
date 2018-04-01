@@ -1,24 +1,21 @@
-<div>
-  <label>List name:
-    <input #listName />
-  </label>
-  <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(listName.value); listName.value=''">
-    add
-  </button>
-</div>
 
 <div class="album py-5 bg-light">
+  <div>
+    <label>List name:
+      <input #listName />
+    </label>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button (click)="add(listName.value); listName.value=''">
+      add
+    </button>
+  </div>
   <div class="row">
     <div class="col-md-4" *ngFor="let list of lists">
       <div class="card mb-4 box-shadow">
         <div class="card-body">
           <p class="card-text">{{list.name}}</p>
           <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary" routerLink="/list-view/{{list.id}}">Details</button>
-              <button type="button" class="btn btn-sm btn-outline-secondary" routerLink="/lists">Edit</button>
-            </div>
+            <app-cards></app-cards>
           </div>
         </div>
       </div>
