@@ -1,0 +1,35 @@
+<div id="search-component">
+  <form class="form-inline my-2 my-lg-0">
+    <input #searchBox id="search-box" (keyup)="search(searchBox.value)" placeholder="Search Boards" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"/>
+  </form>
+  <ul class="search-result">
+    <li *ngFor="let board of boards$ | async" >
+      <a routerLink="/detail/{{board.id}}">
+        {{board.name}}
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- <div id="search-component">
+  <form class="form-inline my-2 my-lg-0">
+    <input #searchBox id="search-box" (keyup)="search(searchBox.value)" class="form-control mr-sm-2" type="text" placeholder="Board Search" aria-label="Search">
+
+    <ul *ngIf="boards">
+      <div class="search-result dropdown-menu" id="dropdown01" ngbDropdownMenu>
+        <li class="dropdown-item" *ngFor="let board of boards$ | async">
+          <a routerLink="/board-view/{{board.id}}">
+            {{board.name}}
+          </a>
+        </li>
+      </div>
+    </ul>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</div> -->
+
+
+<!-- <a class="nav-link dropdown-toggle" id="dropdown01" ngbDropdownToggle>Boards</a>
+<div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
+  <a *ngFor="let board of boards" class="dropdown-item" routerLink="board-view/{{board.id}}">{{board.name}}</a>
+</div> -->
